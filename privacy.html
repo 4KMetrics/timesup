@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Time's Up</title>
+  <style>
+    :root { --bg: #1a1a2e; --surface: #16213e; --text: #e0e0e0; --dim: #8892b0; --accent: #4cc9f0; --border: #0f3460; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; padding: 40px 20px; }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    .subtitle { color: var(--dim); font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 18px; margin: 28px 0 12px; color: var(--accent); }
+    p, li { font-size: 15px; margin-bottom: 12px; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
+    th, td { text-align: left; padding: 10px 14px; border: 1px solid var(--border); font-size: 14px; }
+    th { background: var(--surface); color: var(--accent); font-weight: 600; }
+    td { color: var(--text); }
+    code { background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--dim); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Time's Up Browser Extension &mdash; Effective February 2026</p>
+
+    <p>Time's Up respects your privacy completely.</p>
+
+    <h2>Data Collection</h2>
+    <p><strong>None.</strong> Time's Up does not collect, transmit, or share any data. Period.</p>
+    <ul>
+      <li>No analytics or telemetry</li>
+      <li>No external network requests</li>
+      <li>No user tracking</li>
+      <li>No advertising</li>
+      <li>No account required</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>All data is stored <strong>locally in your browser</strong> using <code>chrome.storage.local</code>:</p>
+    <ul>
+      <li><strong>Configuration</strong> &mdash; your blocking rules, time limits, categories, and preferences</li>
+      <li><strong>Usage data</strong> &mdash; time spent per site per day (kept for 7 days, then auto-deleted)</li>
+      <li><strong>Snooze state</strong> &mdash; temporary bypass records (cleared daily)</li>
+    </ul>
+    <p>This data never leaves your browser. It is not synced to any server, cloud service, or third party.</p>
+
+    <h2>Permissions Explained</h2>
+    <table>
+      <tr><th>Permission</th><th>Why It's Needed</th></tr>
+      <tr><td><code>storage</code></td><td>Save your config and usage data locally</td></tr>
+      <tr><td><code>alarms</code></td><td>Periodic time tracking (1-minute tick) and daily reset</td></tr>
+      <tr><td><code>tabs</code></td><td>Track which site is active to count time</td></tr>
+      <tr><td><code>activeTab</code></td><td>Access the current tab's URL for domain matching</td></tr>
+      <tr><td><code>declarativeNetRequest</code></td><td>Block sites by redirecting to the blocked page</td></tr>
+      <tr><td><code>idle</code></td><td>Pause time tracking when you're away from the computer</td></tr>
+      <tr><td><code>scripting</code></td><td>Inject doomscroll detection script into configured sites only</td></tr>
+      <tr><td><code>host_permissions: &lt;all_urls&gt;</code></td><td>Required for declarativeNetRequest to block any site</td></tr>
+    </table>
+
+    <h2>Third Parties</h2>
+    <p>Time's Up does not share data with any third parties. There are no third-party SDKs, libraries, or services embedded in the extension.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we update this privacy policy, the changes will be reflected here with an updated effective date.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, reach out via the support link on the <a href="https://chromewebstore.google.com">Chrome Web Store</a> listing.</p>
+
+    <div class="footer">
+      &copy; 2026 4KMetrics. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
