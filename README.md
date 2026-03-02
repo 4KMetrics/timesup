@@ -20,4 +20,3 @@ This repository hosts the public-facing GitHub Pages site for the
 
 > This repo is auto-synced from a private repository.
 > Source code is closed-source and not published here.
-> Do not edit files directly -- changes will be overwritten on next release.
