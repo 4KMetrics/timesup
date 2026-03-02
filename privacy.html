@@ -1,81 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Time's Up</title>
   <style>
-    :root { --bg: #1a1a2e; --surface: #16213e; --text: #e0e0e0; --dim: #8892b0; --accent: #4cc9f0; --border: #0f3460; }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; padding: 40px 20px; }
-    .container { max-width: 720px; margin: 0 auto; }
-    h1 { font-size: 28px; margin-bottom: 4px; }
-    .subtitle { color: var(--dim); font-size: 14px; margin-bottom: 32px; }
-    h2 { font-size: 18px; margin: 28px 0 12px; color: var(--accent); }
-    p, li { font-size: 15px; margin-bottom: 12px; }
-    ul { padding-left: 24px; margin-bottom: 16px; }
-    li { margin-bottom: 6px; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
-    th, td { text-align: left; padding: 10px 14px; border: 1px solid var(--border); font-size: 14px; }
-    th { background: var(--surface); color: var(--accent); font-weight: 600; }
-    td { color: var(--text); }
-    code { background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 13px; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--dim); font-size: 13px; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #0a0a1a;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+    }
+
+    main {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.25rem;
+    }
+
+    .effective-date {
+      color: #555570;
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid #1e1e3a;
+      padding-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      padding: 0.35rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: #6366f1;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    thead th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      background: #12122a;
+      color: #ffffff;
+      font-weight: 600;
+      border-bottom: 2px solid #2a2a4a;
+    }
+
+    tbody td {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid #1e1e3a;
+      vertical-align: top;
+    }
+
+    tbody td:first-child {
+      color: #818cf8;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    a {
+      color: #818cf8;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: #a5b4fc;
+      text-decoration: underline;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      max-width: 720px;
+      width: 100%;
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #1e1e3a;
+      color: #555570;
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Time's Up Browser Extension &mdash; Effective February 2026</p>
+  <main>
+    <a class="back-link" href="./index.html">&larr; Back to Home</a>
 
-    <p>Time's Up respects your privacy completely.</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective: February 2026</p>
 
     <h2>Data Collection</h2>
-    <p><strong>None.</strong> Time's Up does not collect, transmit, or share any data. Period.</p>
-    <ul>
-      <li>No analytics or telemetry</li>
-      <li>No external network requests</li>
-      <li>No user tracking</li>
-      <li>No advertising</li>
-      <li>No account required</li>
-    </ul>
+    <p>
+      <strong>None.</strong> Time's Up collects no analytics, no telemetry,
+      no tracking data, and serves no ads. No account is required. There is
+      no server. There is no data pipeline. Your browsing data stays on
+      your machine.
+    </p>
 
     <h2>Data Storage</h2>
-    <p>All data is stored <strong>locally in your browser</strong> using <code>chrome.storage.local</code>:</p>
+    <p>
+      All data is stored locally in your browser using
+      <code>chrome.storage.local</code>. Nothing is transmitted over the
+      network. The following data is stored:
+    </p>
     <ul>
-      <li><strong>Configuration</strong> &mdash; your blocking rules, time limits, categories, and preferences</li>
-      <li><strong>Usage data</strong> &mdash; time spent per site per day (kept for 7 days, then auto-deleted)</li>
-      <li><strong>Snooze state</strong> &mdash; temporary bypass records (cleared daily)</li>
+      <li>
+        <strong>Configuration</strong> &mdash; blocking rules, time limits,
+        categories, and preferences
+      </li>
+      <li>
+        <strong>Usage data</strong> &mdash; time spent per site per day,
+        kept for 7 days and automatically deleted
+      </li>
+      <li>
+        <strong>Snooze state</strong> &mdash; temporary bypass records,
+        cleared daily
+      </li>
     </ul>
-    <p>This data never leaves your browser. It is not synced to any server, cloud service, or third party.</p>
+    <p>
+      Data never leaves your browser. It is not synced to any server,
+      cloud service, or third party.
+    </p>
 
-    <h2>Permissions Explained</h2>
+    <h2>Permissions</h2>
+    <p>
+      Time's Up requests only the permissions required for its
+      functionality. Here is a complete list and why each is needed:
+    </p>
+
     <table>
-      <tr><th>Permission</th><th>Why It's Needed</th></tr>
-      <tr><td><code>storage</code></td><td>Save your config and usage data locally</td></tr>
-      <tr><td><code>alarms</code></td><td>Periodic time tracking (1-minute tick) and daily reset</td></tr>
-      <tr><td><code>tabs</code></td><td>Track which site is active to count time</td></tr>
-      <tr><td><code>activeTab</code></td><td>Access the current tab's URL for domain matching</td></tr>
-      <tr><td><code>declarativeNetRequest</code></td><td>Block sites by redirecting to the blocked page</td></tr>
-      <tr><td><code>idle</code></td><td>Pause time tracking when you're away from the computer</td></tr>
-      <tr><td><code>scripting</code></td><td>Inject doomscroll detection script into configured sites only</td></tr>
-      <tr><td><code>host_permissions: &lt;all_urls&gt;</code></td><td>Required for declarativeNetRequest to block any site</td></tr>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>storage</td>
+          <td>Save configuration and usage data locally</td>
+        </tr>
+        <tr>
+          <td>alarms</td>
+          <td>Periodic time tracking and daily reset</td>
+        </tr>
+        <tr>
+          <td>tabs</td>
+          <td>Track active site for time counting</td>
+        </tr>
+        <tr>
+          <td>activeTab</td>
+          <td>Access current tab URL for domain matching</td>
+        </tr>
+        <tr>
+          <td>declarativeNetRequest</td>
+          <td>Block sites by redirect</td>
+        </tr>
+        <tr>
+          <td>idle</td>
+          <td>Pause tracking when away from the computer</td>
+        </tr>
+        <tr>
+          <td>scripting</td>
+          <td>Inject doomscroll detection</td>
+        </tr>
+        <tr>
+          <td>host_permissions: all_urls</td>
+          <td>Required for declarativeNetRequest to function on all sites</td>
+        </tr>
+      </tbody>
     </table>
 
     <h2>Third Parties</h2>
-    <p>Time's Up does not share data with any third parties. There are no third-party SDKs, libraries, or services embedded in the extension.</p>
-
-    <h2>Changes to This Policy</h2>
-    <p>If we update this privacy policy, the changes will be reflected here with an updated effective date.</p>
+    <p>
+      Time's Up includes no third-party SDKs, libraries, or services.
+      There are zero external network requests.
+    </p>
 
     <h2>Contact</h2>
-    <p>For privacy questions, reach out via the support link on the <a href="https://chromewebstore.google.com">Chrome Web Store</a> listing.</p>
+    <p>
+      For questions about this privacy policy, use the support link on
+      the Chrome Web Store listing.
+    </p>
+  </main>
 
-    <div class="footer">
-      &copy; 2026 4KMetrics. All rights reserved.
-    </div>
-  </div>
+  <footer>
+    <p>&copy; 2026 Built by 4KMetrics</p>
+  </footer>
 </body>
 </html>

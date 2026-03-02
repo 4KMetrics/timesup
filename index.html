@@ -1,27 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Time's Up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time's Up — Stop Doomscrolling</title>
   <style>
-    :root { --bg: #1a1a2e; --text: #e0e0e0; --dim: #8892b0; --accent: #4cc9f0; --border: #0f3460; }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; padding: 20px; }
-    h1 { font-size: 32px; margin-bottom: 12px; }
-    p { color: var(--dim); font-size: 16px; margin-bottom: 24px; }
-    a { color: var(--accent); text-decoration: none; font-size: 15px; }
-    a:hover { text-decoration: underline; }
-    .links { display: flex; gap: 24px; justify-content: center; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #0a0a1a;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+    }
+
+    main {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.15rem;
+      color: #a0a0b8;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #1e1e3a;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+
+    ul li {
+      padding: 0.45rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: #6366f1;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+    }
+
+    .links {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    a {
+      color: #818cf8;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: #a5b4fc;
+      text-decoration: underline;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #6366f1;
+      color: #ffffff;
+      padding: 0.75rem 1.75rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      transition: background 0.15s ease;
+    }
+
+    .cta:hover {
+      background: #4f46e5;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    footer {
+      max-width: 720px;
+      width: 100%;
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #1e1e3a;
+      color: #555570;
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
-  <div>
+  <main>
     <h1>Time's Up</h1>
-    <p>Stop doomscrolling. Block distracting sites, set time limits, and take back your focus.</p>
+    <p class="tagline">
+      Stop doomscrolling. Block distracting sites, set time limits,
+      and take back your focus.
+    </p>
+
+    <!-- Replace # with actual Chrome Web Store URL when published -->
+    <a class="cta" href="#">Install from Chrome Web Store</a>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Site blocking with blocklist</li>
+      <li>Per-site daily time limits</li>
+      <li>Category budgets (Social Media, Video, News, and more)</li>
+      <li>Scheduled downtime windows</li>
+      <li>Doomscroll detection</li>
+      <li>PIN protection for bypass actions</li>
+      <li>Zero data collection &mdash; 100% local</li>
+    </ul>
+
     <div class="links">
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="./privacy.html">Privacy Policy</a>
+      <a href="./releases/">Release Notes</a>
     </div>
-  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Built by 4KMetrics</p>
+  </footer>
 </body>
 </html>
