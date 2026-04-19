@@ -107,14 +107,116 @@
 
     <ul class="release-list">
       <li>
+        <a href="./v2.5.2.md">
+          <span class="release-version">v2.5.2</span>
+          <span class="release-date">April 2026</span>
+        </a>
+        <p class="release-summary">v2.5.2 drops the system.memory permission to unblock Chrome Web Store uploads and reduce the install-time permission prompt. No user-visible behavior change.</p>
+      </li>
+      <li>
+        <a href="./v2.5.1.md">
+          <span class="release-version">v2.5.1</span>
+          <span class="release-date">April 2026</span>
+        </a>
+        <p class="release-summary">v2.5.1 is a patch release fixing a race condition in doomscroll content-script registration that was causing silent failures of the feature on some service worker lifecycles. The bug was surfaced by the v2.5.0 diagnostics panel and had been logged invisibly to chrome://extensions/errors for weeks.</p>
+      </li>
+      <li>
+        <a href="./v2.5.0.md">
+          <span class="release-version">v2.5.0</span>
+          <span class="release-date">April 2026</span>
+        </a>
+        <p class="release-summary">v2.5.0 adds a Diagnostics section to settings so users can see how the extension is behaving over time. The extension now records a bounded error log and periodic health snapshots to local storage, exportable as JSON for issue reporting. No network egress — all data stays on device.</p>
+      </li>
+      <li>
+        <a href="./v2.4.0.md">
+          <span class="release-version">v2.4.0</span>
+          <span class="release-date">April 2026</span>
+        </a>
+        <p class="release-summary">v2.4.0 adds a Templates section to settings so you can apply a curated blocklist + category preset with one click instead of typing out every site by hand. Useful when onboarding a new install or switching contexts (focus mode vs. casual browsing).</p>
+      </li>
+      <li>
+        <a href="./v2.3.0.md">
+          <span class="release-version">v2.3.0</span>
+          <span class="release-date">April 2026</span>
+        </a>
+        <p class="release-summary">v2.3.0 adds cloud-backed config restore and hardens the import flow. If you reinstall the extension (on a new machine, after clearing storage, etc.), your previous settings can be restored from your signed-in Chrome profile. Importing a config file now shows exactly what will change before you apply it.</p>
+      </li>
+      <li>
+        <a href="./v2.2.10.md">
+          <span class="release-version">v2.2.10</span>
+          <span class="release-date">April 2026</span>
+        </a>
+        <p class="release-summary">v2.2.10 fixes a small but annoying bug where snoozing a block dumped you on the domain homepage instead of the page you were trying to get back to.</p>
+      </li>
+      <li>
+        <a href="./v2.2.9.md">
+          <span class="release-version">v2.2.9</span>
+          <span class="release-date">April 2026</span>
+        </a>
+        <p class="release-summary">v2.2.9 overhauls time tracking so passive viewing and background audible playback are credited minute-for-minute. Before this release, the extension undercounted the most common ways people actually consume distracting media — quietly watching long YouTube videos, lectures, or having music playing from a background tab while working.</p>
+      </li>
+      <li>
+        <a href="./v2.2.8.md">
+          <span class="release-version">v2.2.8</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">v2.2.8 is a housekeeping release — internal improvements with no user-visible behavior change.</p>
+      </li>
+      <li>
+        <a href="./v2.2.7.md">
+          <span class="release-version">v2.2.7</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">v2.2.7 fixes a bug where blocked tabs stayed blocked after the daily usage reset at midnight.</p>
+      </li>
+      <li>
+        <a href="./v2.2.6.md">
+          <span class="release-version">v2.2.6</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">v2.2.6 is a tooling release — no user-facing changes. Follow-up refinement of the Claude Code GitHub Actions workflow.</p>
+      </li>
+      <li>
+        <a href="./v2.2.5.md">
+          <span class="release-version">v2.2.5</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">v2.2.5 is a tooling release — no user-facing changes. Adds the Claude Code GitHub Actions workflow to enable automated code review on pull requests.</p>
+      </li>
+      <li>
+        <a href="./v2.2.4.md">
+          <span class="release-version">v2.2.4</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">v2.2.4 fixes a service worker state loss that caused time-tracking to drop minutes during passive viewing sessions.</p>
+      </li>
+      <li>
+        <a href="./v2.2.3.md">
+          <span class="release-version">v2.2.3</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">Your blocking rules, time limits, and categories were being lost after 2-3 minutes of inactivity. The extension now reloads your saved settings every time it wakes up, so your configuration stays intact.</p>
+      </li>
+      <li>
+        <a href="./v2.2.1.md">
+          <span class="release-version">v2.2.1</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">Previously, configuration changes could silently fail to save if the browser closed or the extension restarted at the wrong moment. Settings are now fully written to storage before the "Saved" indicator appears.</p>
+      </li>
+      <li>
+        <a href="./v2.2.0.md">
+          <span class="release-version">v2.2.0</span>
+          <span class="release-date">March 2026</span>
+        </a>
+        <p class="release-summary">v2.2.0 is a tooling release — no user-facing changes. Adds the auto-sync workflow that copies landing page, privacy policy, release notes, and Chrome Web Store screenshots from the private source repo to the public-facing [4KMetrics/timesup](https://github.com/4KMetrics/timesup) site.</p>
+      </li>
+      <li>
         <a href="./v2.1.0.md">
           <span class="release-version">v2.1.0</span>
           <span class="release-date">March 2026</span>
         </a>
-        <p class="release-summary">
-          Auto-save, PIN protection, category suggestions, JSON validation,
-          &ldquo;Binge Time?&rdquo; rename
-        </p>
+        <p class="release-summary">Settings are now saved automatically as you edit them. No more forgetting to hit save.</p>
       </li>
     </ul>
   </main>
